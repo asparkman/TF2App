@@ -1,0 +1,135 @@
+﻿Area. General interfaces
+	Grouping. ISteamApps
+		Desc. Methods relating to Steam Apps in general.
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetAppList
+			Desc. Full list of every publicly facing program in the store/library.
+			Name. GetAppList
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetServersAtAddress
+			Desc. Shows all steam-compatible servers related to a IPv4 Address.
+			Name. GetServersAtAddress
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/UpToDateCheck
+			Desc. Check if a given app version is the most current available.
+			Name. UpToDateCheck
+	Grouping. ISteamEconomy
+		Desc. Methods relating to games' store's assets.
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetAssetClassInfo
+			Desc. Asset metadata
+			Name. GetAssetClassInfo
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetAssetPrices
+			Desc. Prices of items in the economy.
+			Name. GetAssetPrices
+	Grouping. ISteamNews
+		Desc. Methods relating to Steam News.
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetNewsForApp
+			Desc. News feed for various games
+			Name. GetNewsForApp
+	Grouping. ISteamRemoteStorage
+		Desc. Methods relating to stored files.
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetCollectionDetails
+			Name. GetCollectionDetails
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetPublishedFileDetails
+			Name. GetPublishedFileDetails
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetUGCFileDetails
+			Desc. UGC file size, local filename, and URL.
+			Name. GetUGCFileDetails
+	Grouping. ISteamUser
+		Desc. Methods relating to Steam users.
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetFriendList
+			Desc. User friend list
+			Name. GetFriendList
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerBans
+			Desc. Player ban/probation status
+			Name. GetPlayerBans
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerSummaries
+			Desc. User profile data
+			Name. GetPlayerSummaries
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetUserGroupList
+			Desc. Lists Group ID(s) linked with 64 bit ID
+			Name. GetUserGroupList
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/ResolveVanityURL
+			Desc. Resolve vanity URL parts to a 64 bit ID.
+			Name. ResolveVanityURL
+	Grouping. ISteamUserStats
+		Desc. Methods relating to User stats.
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetGlobalAchievementPercentagesForApp
+			Desc. Statistics showing how much of the player base have unlocked various achievements.
+			Name. GetGlobalAchievementPercentagesForApp
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetGlobalStatsForGame
+			Name. GetGlobalStatsForGame
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetNumberOfCurrentPlayers
+			Desc. Returns the current number of players for an app.
+			Name. GetNumberOfCurrentPlayers
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerAchievements
+			Desc. Game achievements
+			Name. GetPlayerAchievements
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetSchemaForGame
+			Name. GetSchemaForGame
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetUserStatsForGame
+			Name. GetUserStatsForGame
+	Grouping. IPlayerService
+		Desc. Methods relating to a Steam user's games.
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetRecentlyPlayedGames
+			Name. GetRecentlyPlayedGames
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetOwnedGames
+			Name. GetOwnedGames
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetSteamLevel
+			Name. GetSteamLevel
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetBadges
+			Name. GetBadges
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetCommunityBadgeProgress
+			Name. GetCommunityBadgeProgress
+	Grouping. ISteamWebAPIUtil
+		Desc. Methods relating to the WebAPI itself.
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetServerInfo
+			Desc. Returns WebAPI server time &amp; checks server status.
+			Name. GetServerInfo
+		Method.
+			Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetSupportedAPIList
+			Desc. Lists all available WebAPI interfaces.
+			Name. GetSupportedAPIList
+Area. Game specific interfaces
+	Grouping. Generic
+		Grouping. IEconItems_<ID>
+			Desc. Methods relating to in-game items for supported games.
+			Method.
+				Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerItems
+				Desc. Lists items in a player's backpack.
+				Name. GetPlayerItems
+			Method.
+				Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetSchema
+				Desc. Information about the items in a supporting game.
+				Name. GetSchema
+			Method.
+				Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetSchemaURL
+				Desc. Returns a URL for the games' item_game.txt file.
+				Name. GetSchemaURL
+			Method.
+				Docs. https://wiki.teamfortress.com/wiki/WebAPI/GetStoreMetadata
+				Desc. Information about the game's store.
+				Name. GetStoreMetadata
